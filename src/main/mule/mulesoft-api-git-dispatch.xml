@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="af3b6ac4-e03c-4635-9290-9fb12f4fe1f7" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
+		<http:listener-connection host="0.0.0.0" port="${http.port}" />
 	</http:listener-config>
 	<flow name="mulesoft-api-git-dispatchFlow" doc:id="ca420547-2b67-4d98-9010-5854dee2f40f" >
 		<http:listener doc:name="Listener" doc:id="56be919a-c8f2-405a-b55c-8f8ad1a63394" config-ref="HTTP_Listener_config" path="/test"/>
