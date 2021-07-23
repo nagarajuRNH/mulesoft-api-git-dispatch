@@ -36,7 +36,7 @@
 						<muleVersion>4.3.0</muleVersion>
 						<username>${username}</username>
 						<password>${password}</password>
-						<applicationName>${app.name}-dev</applicationName>
+						<applicationName>${​​​​​​​​app.name}​​​​​​​​-test</applicationName>
 						<environment>Sandbox</environment>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
